@@ -7,7 +7,7 @@ class AppTheme {
             ColorScheme.fromSeed(
               seedColor: Colors.blue,
               brightness: Brightness.light,
-              surface: const Color(0xFFF0F0F0),
+              surface: const Color(0xFFEFF0F4),
               onSurface: const Color(0xFF1C1C1E),
               surfaceContainerHigh: const Color(0xFFFFFFFF),
             );
