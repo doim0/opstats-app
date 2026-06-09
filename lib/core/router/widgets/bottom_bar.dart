@@ -39,7 +39,7 @@ class BottomBar extends StatelessWidget {
       interactionBehavior: GlassInteractionBehavior.full,
 
       glassSettings: LiquidGlassSettings(
-        glassColor: colors.surfaceContainerHigh,
+        glassColor: colors.surfaceContainerHigh.withValues(alpha: 0.7),
         thickness: 30,
         blur: 2,
         chromaticAberration: .01,
