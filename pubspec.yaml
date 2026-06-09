@@ -41,6 +41,7 @@ dependencies:
   liquid_glass_widgets: ^0.13.0
   flutter_svg: ^2.3.0
   dynamic_color: ^1.8.1
+  soft_edge_blur: ^0.1.3
 
 dev_dependencies:
   flutter_test:
@@ -63,10 +64,6 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  assets:
-    - assets/router/icon/home_icon.svg
-    - assets/router/icon/ranking_icon.svg
-    - assets/router/icon/today_icon.svg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
