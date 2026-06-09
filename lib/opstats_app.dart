@@ -1,11 +1,12 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:opstats/features/home/presentation/pages/home_page.dart';
+import 'package:opstats/router/widgets/bottom_bar.dart';
 
-import 'core/router/provider/bottom_bar_provider.dart';
-import 'core/router/provider/theme_mode_provider.dart';
-import 'core/styles/app_theme.dart';
-import 'core/router/widgets/bottom_bar.dart';
+import 'router/provider/bottom_bar_provider.dart';
+import 'router/provider/theme_mode_provider.dart';
+import 'core/theme/app_theme.dart';
 
 class OpstatsApp extends ConsumerWidget {
   const OpstatsApp({super.key});
@@ -13,7 +14,7 @@ class OpstatsApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final bodies = [
-      const Center(child: Text('Hello From Home')),
+      const Center(child: HomePage()),
       const Center(child: Text('Hello From Favorite')),
       const Center(child: Text('Hello From Settings')),
     ];
@@ -28,7 +29,7 @@ class OpstatsApp extends ConsumerWidget {
           darkTheme: AppTheme.darkTheme(darkDynamic),
           themeMode: themeMode,
           home: Scaffold(
-            appBar: AppBar(title: const Text('Opstats')),
+            extendBody: true,
             bottomNavigationBar: BottomBar(
               selectedIndex: indexBottomNavbar,
               isSearchActive: isSearchActive,
