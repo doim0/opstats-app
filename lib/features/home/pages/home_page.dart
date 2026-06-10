@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../../core/widgets/large_title_scroll_scaffold.dart';
+import '../../../core/widgets/large_title_scroll_scaffold.dart';
 
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});

@@ -1,7 +1,7 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:opstats/features/home/presentation/pages/home_page.dart';
+import 'package:opstats/features/home/pages/home_page.dart';
 import 'package:opstats/router/widgets/bottom_bar.dart';
 
 import 'router/provider/bottom_bar_provider.dart';
